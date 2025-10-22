@@ -42,9 +42,25 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           scales: {
             x: {
-              title: { display: true, text: "Année" },
-              grid: { display: false }
-            },
+                            title: {
+                                display: true,
+                                text: 'Année'
+                            },
+                            // --- AJOUTEZ CE BLOC ---
+                            ticks: {
+                                callback: function(value, index, ticks) {
+                                    // 'this.getLabelForValue(value)' récupère l'année (ex: 1995)
+                                    const year = this.getLabelForValue(value);
+                                    
+                                    // On vérifie si l'année est un multiple de 5
+                                    if (year % 5 === 0) {
+                                        return year; // Affiche l'année
+                                    }
+                                    return null; // Cache l'étiquette pour les autres années
+                                }
+                            }
+                            // --- FIN DE L'AJOUT ---
+                        },
             y: {
               title: { display: true, text: "Taux d’expression (%)" },
               ticks: { callback: val => val + " %" },
