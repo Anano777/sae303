@@ -90,7 +90,7 @@ header nav a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("/images/bannier.jpg") center/cover no-repeat;
+  background: url("../images/bannier.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +205,8 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
