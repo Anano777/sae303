@@ -36,6 +36,33 @@ font-size:24px;
   font-weight: 700;
   font-size: 15px;
 }
+
+
+.apercu-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 30px;
+}
+
+
+#apercu .apercu-image {
+  height: 300px;
+  width: auto;
+  max-width: 150px;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+
+
+.apercu-title {
+  font-size: 28px;
+  margin: 0; 
+}
+
+
+
 section h3 {
   font-weight: 600;
 }
