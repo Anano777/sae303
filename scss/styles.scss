@@ -1,57 +1,40 @@
-@import 'general';
-
+@import "general";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@import 'general';
-
+  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #222;
   background-color: #fafafa;
   line-height: 1.6;
 }
 
-
 h2 {
-  color: rgb(71, 71, 71);
+  color: rgb(61, 61, 61);
 }
 
 h3, h4, p {
   color: #777;
 }
 
+.thematique-h2{
+font-size:24px;
+}
+
 #apercu .subtitle {
-  color: #e04b57;
+  color: #d1555f;
   font-weight: 600;
   font-size: 15px;
 }
-
-.thematique-h2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color:$h2;
-}
-ul li {
-  color:$text-color;
-}
-
-.topic-header {
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
 section h3 {
   font-weight: 600;
 }
@@ -65,7 +48,7 @@ header {
   align-items: center;
   padding: 15px 60px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: $background-color;
+  background-color: #fafafa;
   z-index: 10;
 }
 
@@ -89,13 +72,15 @@ header nav a {
 
 header nav a:hover {
   color: #e63946;
+} 
+
+.topic-content ul li{
+  color:$text-color;
 }
-
-
 .hero {
   position: relative;
   height: 100vh;
-  background: url('../images/bannier.jpg') center/cover no-repeat;
+  background: url("../images/bannier.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,16 +130,16 @@ header nav a:hover {
   background-color: #c5303d;
   transform: scale(1.05);
 }
-.small-btn{
+
+.small-btn {
   display: inline-block;
-  background-color:#e63946;
-  color: #fff !important; 
+  background-color: #e63946;
+  color: #fff !important;
   text-decoration: none;
   border-radius: 8px;
-  padding:8px 16px;
+  padding: 8px 16px;
   margin-top: 20px;
 }
-
 
 .section {
   padding: 100px 20px;
@@ -162,7 +147,6 @@ header nav a:hover {
   max-width: 1200px;
   margin: auto;
 }
-
 
 .cards {
   display: flex;
@@ -179,7 +163,6 @@ header nav a:hover {
   flex: 1 1 250px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .chart-container {
   position: relative;
@@ -208,18 +191,19 @@ header nav a:hover {
   align-items: center;
 }
 
-
 .dashboard-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
   background: #fff;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .stats-row {
@@ -260,33 +244,31 @@ header nav a:hover {
   font-weight: bold;
 }
 
-.female-color { color: #e63946; }
-.male-color { color: #457b9d; }
+.female-color {
+  color: #e63946;
+}
 
-
-.card-header .icon i {
-  font-size: 24px;        
-  color: $text-color;
+.male-color {
+  color: #457b9d;
 }
 
 .info-line {
   display: flex;
   align-items: center;
-  gap: 5px; 
-  margin-top: 2rem;
 }
 
 .info-line p {
   margin: 0;
   display: flex;
   align-items: center; 
+  margin: 1rem;
 }
 
 .icon.trend-icon {
-  font-size: 16px;   
-  color: #6c63ff;    
+  font-size: 16px;  
+  color: #6c63ff;   
   display: inline-block;
-  margin-right: 5px; 
+  margin-left: 18px; 
 }
 
 .legend {
@@ -307,9 +289,13 @@ header nav a:hover {
   height: 15px;
   border-radius: 3px;
 }
+.color-box.female {
+  background-color: #e63946;
+}
 
-.color-box.female { background-color: #e63946; }
-.color-box.male { background-color: #457b9d; }
+.color-box.male {
+  background-color: #457b9d;
+}
 
 footer {
   text-align: center;
@@ -318,13 +304,14 @@ footer {
   color: #555;
   background-color: #f1f1f1;
 }
+
 form.contact-form {
   background-color: #fff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 90%;         
+  max-width: 500px;
+  width: 90%;      
   margin: 50px auto;  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -382,27 +369,20 @@ textarea {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   background: linear-gradient(135deg, #f77f00, #e63946);
 }
-  
 
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
   }
-
   header nav {
     flex-direction: column;
     align-items: center;
   }
-
   .hero h1 {
     font-size: 1.5rem;
   }
 }
-
-
 .cards {
-
   display: flex;
   justify-content: center;
-
 }
