@@ -11,7 +11,9 @@
 <body>
   <header>
     <div>
+      <a href ="index.html">
       <img src="images/logo.svg" alt="logo" class="logo">
+      </a>
     </div>
   
     <nav>
@@ -28,7 +30,7 @@
       </div>
       <div class="hero-content">
         <h1>L’évolution de la représentation des femmes dans les médias audiovisuels français</h1>
-        <p>Découvrez comment la place et la visibilité des femmes à la télévision et à la radio ont évolué au fil du temps — à travers les chaînes, les types d’émissions et les rôles occupés.</p>
+        <p>Découvrez comment la place et la visibilité des femmes à la télévision et à la radio ont évolué au fil du temps, à travers les chaînes, les types d’émissions et les rôles occupés.</p>
         <a href="#apercu" class="cta-btn">Explorer les données</a>
       </div>
     </section>
@@ -57,11 +59,9 @@
       <h2>Visualisations de données</h2>
       <p>Interagissez avec les graphiques pour observer les tendances et évolutions au fil du temps.</p>
       <div class="chart-container" id="chart-parole">
-        <div class="chart-placeholder">[ Graphique - Temps de parole ]</div>
-      </div>
-      <div class="chart-container" id="chart-types">
-        <div class="chart-placeholder">[ Graphique - Types d’émissions ]</div>
-      </div>
+        <h3> Temps de parole des femmes à la télévision (2000-2025)</h3>
+       <canvas id="womenExpressionChart"></canvas>
+       </div>
     </section>
 
     <section id="comparaisons" class="section">
@@ -84,12 +84,15 @@
       <div class="chart-placeholder">[ Graphique comparatif ]</div>
     </section>
 
-    <!-- SECTION À PROPOS -->
+
     <section id="apropos" class="section">
       <h2>À propos du projet</h2>
       <p>Ce projet vise à rendre visible la place des femmes dans les médias audiovisuels français. Les données proviennent notamment du Conseil Supérieur de l’Audiovisuel (CSA) et d’autres bases publiques. L’objectif est de transformer ces données en visualisations interactives, compréhensibles et pédagogiques.</p>
     </section>
   </main>
+
+  <script src ="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <footer>
     <p>© 2025 Femmes & Médias | Projet académique de visualisation de données</p>
