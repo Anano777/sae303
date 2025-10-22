@@ -17,7 +17,7 @@
 }
 
 
-/* Boîte de Note */
+
 .note-box {
     background-color: #efefef;
     border: 1px solid #ababab;
@@ -31,7 +31,7 @@
     font-size: 14px;
 }
 
-/* Grille des Thématiques */
+
 .topics-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,7 +59,7 @@
 .topic-header h3 {
     margin: 0;
     font-size: 20px;
-    color: #b71a27;
+    color: #585758;
 }
 
 .topic-percentage {
@@ -118,14 +118,13 @@
     top: -2px; /* Ajustement vertical */
 }
 
-/* Carte 3 : Footer "Pour aller plus loin" */
 .footer-card {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 }
 
 .footer-card h2 {
     font-size: 20px;
-    color: #b71a27;
+    color: #575656;
     margin: 0 0 10px 0;
 }
 
@@ -169,7 +168,7 @@
     margin: 20px 0 0 0;
 }
 
-/* Rendre responsive sur les petits écrans */
+
 @media (max-width: 900px) {
     .topics-grid {
         grid-template-columns: 1fr;
