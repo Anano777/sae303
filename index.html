@@ -38,61 +38,112 @@
     <section id="apercu" class="section">
       <h2>Aperçu</h2>
       <p>Ce projet de visualisation met en lumière la représentation des femmes dans les médias français. À partir de données issues de chaînes de télévision et de stations de radio, nous analysons le temps de parole, les fonctions occupées, et la répartition selon les genres d’émissions (culturelles, politiques, divertissement).</p>
-
       <div class="cards">
-        <div class="card">
-          <h3>Temps de parole</h3>
-          <p>Évolution de la répartition du temps de parole entre femmes et hommes au fil des années.</p>
-        </div>
-        <div class="card">
-          <h3>Types d’émissions</h3>
-          <p>Présence des femmes dans les programmes culturels, politiques et de divertissement.</p>
-        </div>
-        <div class="card">
-          <h3>Rôles et fonctions</h3>
-          <p>Proportion de femmes réalisatrices, journalistes, ou invitées dans les médias audiovisuels.</p>
-        </div>
-      </div>
+  <div class="card">
+    <h3>Temps de parole</h3>
+    <p>Découvrez l’évolution du temps de parole des femmes à la télévision et à la radio.</p>
+    <a href="#donnees" class="small-btn">Voir le graphique</a>
+  </div>
+  <div class="card">
+    <h3>Comparaison hommes/femmes</h3>
+    <p>Comparez les proportions globales de parole selon le genre.</p>
+    <a href="#analyse" class="small-btn">Voir la comparaison</a>
+  </div>
     </section>
-
-    <section id="donnees" class="section visuals">
+     <section id="donnees" class="section visuals">
       <h2>Visualisations de données</h2>
       <p>Interagissez avec les graphiques pour observer les tendances et évolutions au fil du temps.</p>
       <div class="chart-container" id="chart-parole">
-        <h3> Temps de parole des femmes à la télévision (2000-2025)</h3>
+        <h3> Temps de parole des femmes à la télévision (1995-2019)</h3>
        <canvas id="womenExpressionChart"></canvas>
        </div>
     </section>
 
-    <section id="comparaisons" class="section">
-      <h2>Comparaisons</h2>
-      <p>Comparez la représentation selon les chaînes, les années ou les formats médiatiques.</p>
-      <div class="filters">
-        <label>Année :
-          <input type="range" min="2000" max="2025" value="2015">
-        </label>
-        <label>Chaîne :
-          <select>
-            <option>Toutes</option>
-            <option>France 2</option>
-            <option>TF1</option>
-            <option>Arte</option>
-            <option>France Inter</option>
-          </select>
-        </label>
+    <section id="analyse" class="section dashboard-section">
+  <h2>Analyse du temps de parole : Hommes vs Femmes</h2>
+  <p>Cette section présente une analyse plus fine du temps d’expression à la télévision et à la radio, en comparant les périodes d’antenne et les volumes horaires selon le genre.</p>
+
+  <div class="dashboard-container">
+    <section class="card chart-card">
+      <h3>Répartition globale du temps de parole</h3>
+      <p>Distribution du temps d’antenne entre hommes et femmes (toutes tranches horaires confondues).</p>
+
+      <div class="chart-container">
+          <canvas id="pieChart"></canvas>
       </div>
-      <div class="chart-placeholder">[ Graphique comparatif ]</div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <span class="color-box female"></span> Femmes
+        </div>
+        <div class="legend-item">
+          <span class="color-box male"></span> Hommes
+        </div>
+      </div>
+    </section>
+    <section class="card info-card">
+      <div class="card-header">
+        <h3>Le piège de la moyenne</h3>
+      </div>
+      <p>Une parité globale de 29,40% peut masquer des inégalités importantes. Les femmes sont surreprésentées aux heures creuses et sous-représentées aux heures de grande écoute.</p>
+
+      <div class="stats-row">
+        <div class="stat-box">
+          <h4>Prime-time (18h-23h)</h4>
+          <p class="percentage">27.62%</p>
+          <p class="description">Taux d'expression des femmes aux heures de grande écoute</p>
+        </div>
+        <div class="stat-box">
+          <h4>Heures creuses (0h-8h)</h4>
+          <p class="percentage">28.56%</p>
+          <p class="description">Taux d'expression des femmes la nuit</p>
+        </div>
+      </div>
+
+      <div class="info-line">
+        <span class="icon trend-icon">&#8663;</span>
+        <p><b>Écart de 0,94 points</b> entre les heures creuses et le prime-time. Les femmes sont davantage présentes quand l'audience est plus faible.</p>
+      </div>
     </section>
 
+    <section class="summary-stats">
+      <div class="card stat-card">
+        <div class="card-header">
+          <span class="icon"></span>
+          <h4>Temps total analysé</h4>
+        </div>
+        <p class="main-stat">460 481 h</p>
+        <p class="sub-stat">Volume total de contenu étudié</p>
+      </div>
 
-    <section id="apropos" class="section">
+      <div class="card stat-card">
+        <div class="card-header">
+          <span class="icon"></span>
+          <h4>Temps de parole femmes</h4>
+        </div>
+        <p class="main-stat female-color">88 983 h</p>
+        <p class="sub-stat">29,40% du temps total</p>
+      </div>
+
+      <div class="card stat-card">
+        <div class="card-header">
+          <span class="icon"></span>
+          <h4>Temps de parole hommes</h4>
+        </div>
+        <p class="main-stat male-color">213 731 h</p>
+        <p class="sub-stat">70,60% du temps total</p>
+      </div>
+    </section>
+  </div>
+</section>
+ <section id="apropos" class="section">
       <h2>À propos du projet</h2>
       <p>Ce projet vise à rendre visible la place des femmes dans les médias audiovisuels français. Les données proviennent notamment du Conseil Supérieur de l’Audiovisuel (CSA) et d’autres bases publiques. L’objectif est de transformer ces données en visualisations interactives, compréhensibles et pédagogiques.</p>
     </section>
   </main>
 
-  <script src ="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
 
   <footer>
     <p>© 2025 Femmes & Médias | Projet académique de visualisation de données</p>
