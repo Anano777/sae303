@@ -12,175 +12,200 @@
 <body>
   <header>
     <div>
-      <a href ="index.html">
-      <img src="images/logo.svg" alt="logo" class="logo">
+      <a href="index.html">
+        <img src="images/logo.svg" alt="logo" class="logo">
       </a>
     </div>
-  
     <nav>
       <a href="index.html">Accueil</a>
       <a href="#donnees">Données</a>
-      <a href="pages/thematiques.html">Thematiques</a>
-      <a href="pages/contact.html" class ="btn-contact">Contactez nous </a>
+      <a href="pages/thematiques.html">Thématiques</a>
+      <a href="pages/contact.html" class="btn-contact">Contactez-nous</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-overlay">
-      </div>
+      <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1>L’évolution de la représentation des femmes dans les médias audiovisuels français</h1>
-        <p>Découvrez comment la place et la visibilité des femmes à la télévision et à la radio ont évolué au fil du temps, à travers les chaînes, les types d’émissions et les rôles occupés.</p>
+        <p>
+          Depuis près de vingt-cinq ans, la place des femmes dans les médias français évolue lentement. 
+          Leurs temps de parole et leurs fonctions à l’écran témoignent de changements réels, mais encore partiels. 
+          Ce projet propose une lecture claire et visuelle de ces évolutions, à travers les données issues de la télévision et de la radio.
+        </p>
         <a href="#apercu" class="cta-btn">Explorer les données</a>
       </div>
     </section>
 
     <section id="apercu" class="section">
-       <img src="images/image1.png" alt="picture" class="apercu-image"> 
+      <img src="images/image1.png" alt="picture" class="apercu-image">
       <h1 class="apercu-title">Vue d’ensemble</h1>
-      <p class="subtitle">Analyse des données INA & CSA sur la présence et l'expression des femmes dans les émissions diffusées:</p>
-      <p class ="subtitle"> 1995-2019 • 55 chaînes analysées</p>
-      <p>Ce projet de visualisation met en lumière la représentation des femmes dans les médias français. À partir de données issues de chaînes de télévision et de stations de radio, nous analysons le temps de parole, les fonctions occupées, et la répartition selon les genres d’émissions (culturelles, politiques, divertissement).</p>
+      <p class="subtitle">Analyse des données INA & CSA sur la présence et l'expression des femmes dans les émissions diffusées :</p>
+      <p class="subtitle">1995–2019 • 55 chaînes analysées</p>
+      <p>
+        Ce projet de visualisation explore la représentation des femmes dans les médias audiovisuels français. 
+        Les données recueillies permettent d’observer l’évolution de leur présence, des temps de parole, 
+        et des rôles occupés selon les types d’émissions : information, culture, politique ou divertissement. 
+        L’objectif est de comprendre comment ces tendances traduisent, dans le temps, la place accordée à la parole féminine.
+      </p>
+      
       <div class="cards">
-  <div class="card">
-    <h3>Temps de parole</h3>
-    <p>Découvrez l’évolution du temps de parole des femmes à la télévision et à la radio.</p>
-    <a href="#donnees" class="small-btn">Voir le graphique</a>
-  </div>
-  <div class="card">
-    <h3>Comparaison hommes/femmes</h3>
-    <p>Comparez les proportions globales de parole selon le genre.</p>
-    <a href="#analyse" class="small-btn">Voir la comparaison</a>
-  </div>
+        <div class="card">
+          <h3>Temps de parole</h3>
+          <p>Évolution du temps d’expression des femmes à la télévision et à la radio sur la période 1995–2019.</p>
+          <a href="#donnees" class="small-btn">Voir le graphique</a>
+        </div>
+        <div class="card">
+          <h3>Comparaison hommes/femmes</h3>
+          <p>Visualisation des différences globales entre les temps de parole des hommes et des femmes.</p>
+          <a href="#analyse" class="small-btn">Voir la comparaison</a>
+        </div>
+      </div>
     </section>
-     <section id="donnees" class="section visuals">
+
+    <section id="donnees" class="section visuals">
       <h2>Visualisations de données</h2>
       <p>
-  Ces visualisations illustrent comment la présence et le temps d’expression des femmes 
-  ont évolué dans les médias français entre 1995 et 2019. 
-  Interagissez avec les graphiques pour observer les tendances par période et par genre.
-</p>
+        Ces visualisations permettent d’observer les variations du temps de parole féminin dans les médias français entre 1995 et 2019. 
+        Elles mettent en évidence les périodes d’augmentation, de stagnation ou de recul, selon les contextes médiatiques et les genres d’émission. 
+        L’enjeu est de comprendre non seulement la quantité de présence, mais aussi sa répartition dans le temps et selon les formats.
+      </p>
+
       <div class="chart-container" id="chart-parole">
-        <h3> Temps de parole des femmes à la télévision (1995-2019)</h3>
-       <canvas id="womenExpressionChart"></canvas>
-       </div>
-       <div class="card">
- <div class="more-info-link">
-  <a href="pages/thematiques.html">
-    En savoir plus sur les thématiques <i class="fas fa-arrow-right"></i>
-  </a>
- </div>
+        <h3>Temps de parole des femmes à la télévision (1995–2019)</h3>
+        <canvas id="womenExpressionChart"></canvas>
+      </div>
+
+      <div class="card">
+        <div class="more-info-link">
+          <a href="pages/thematiques.html">
+            En savoir plus sur les thématiques <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section id="analyse" class="section dashboard-section">
-  <h2>Analyse du temps de parole : Hommes vs Femmes</h2>
-  <p>Cette section présente une analyse plus fine du temps d’expression à la télévision et à la radio, en comparant les périodes d’antenne et les volumes horaires selon le genre.</p>
+      <h2>Analyse du temps de parole : Hommes vs Femmes</h2>
+      <p>
+        Le temps de parole global offre une vision d’ensemble, mais masque des écarts importants selon les tranches horaires et les types d’émission. 
+        Cette section compare la répartition entre hommes et femmes et met en lumière les moments où l’écart se creuse le plus.
+      </p>
 
-  <div class="dashboard-container">
-    <section class="card chart-card">
-      <h3>Répartition globale du temps de parole</h3>
-      <p>Distribution du temps d’antenne entre hommes et femmes (toutes tranches horaires confondues).</p>
+      <div class="dashboard-container">
+        <section class="card chart-card">
+          <h3>Répartition globale du temps de parole</h3>
+          <p>Part moyenne du temps d’expression accordée aux hommes et aux femmes sur l’ensemble des chaînes étudiées.</p>
+          <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="legend">
+            <div class="legend-item">
+              <span class="color-box female"></span> Femmes
+            </div>
+            <div class="legend-item">
+              <span class="color-box male"></span> Hommes
+            </div>
+          </div>
+        </section>
 
+        <section class="card info-card">
+          <div class="card-header">
+            <h3>Lecture des écarts</h3>
+          </div>
+          <p>
+            La moyenne de 29,4 % de temps de parole féminin dissimule une réalité contrastée. 
+            Les femmes sont légèrement plus présentes aux heures creuses, mais leur visibilité diminue aux heures de grande audience. 
+            Cette variation illustre la persistance d’une répartition inégale de la parole selon les moments de diffusion.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <h4>Prime-time (18h–23h)</h4>
+              <p class="percentage">27.62%</p>
+              <p class="description">Taux d’expression des femmes aux heures de grande écoute</p>
+            </div>
+            <div class="stat-box">
+              <h4>Heures creuses (0h–8h)</h4>
+              <p class="percentage">28.56%</p>
+              <p class="description">Taux d’expression des femmes la nuit</p>
+            </div>
+          </div>
+
+          <div class="info-line">
+            <span class="icon trend-icon">&#8663;</span>
+            <p>
+              <b>Écart de 0,94 points</b> entre les heures creuses et le prime-time : les femmes sont davantage présentes quand l’audience est plus faible.
+            </p>
+          </div>
+        </section>
+
+        <section class="summary-stats">
+          <div class="card stat-card">
+            <div class="card-header">
+              <span class="icon"><i class="fa-solid fa-hourglass"></i></span>
+              <h4>Temps total analysé</h4>
+            </div>
+            <p class="main-stat">460 481 h</p>
+            <p class="sub-stat">Volume total de contenu étudié</p>
+          </div>
+
+          <div class="card stat-card">
+            <div class="card-header">
+              <span class="icon"><i class="fa-solid fa-female"></i></span>
+              <h4>Temps de parole femmes</h4>
+            </div>
+            <p class="main-stat female-color">88 983 h</p>
+            <p class="sub-stat">29,40 % du temps total</p>
+          </div>
+
+          <div class="card stat-card">
+            <div class="card-header">
+              <span class="icon"><i class="fa-solid fa-male"></i></span>
+              <h4>Temps de parole hommes</h4>
+            </div>
+            <p class="main-stat male-color">213 731 h</p>
+            <p class="sub-stat">70,60 % du temps total</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section>
       <div class="chart-container">
-          <canvas id="pieChart"></canvas>
-      </div>
-
-      <div class="legend">
-        <div class="legend-item">
-          <span class="color-box female"></span> Femmes
-        </div>
-        <div class="legend-item">
-          <span class="color-box male"></span> Hommes
+        <h2>Présence féminine selon les tranches horaires</h2>
+        <p class="chart-comment">
+          L’analyse horaire montre que la part des femmes reste globalement inférieure à 30 % tout au long de la journée. 
+          On observe un léger pic autour de la mi-journée, suivi d’une baisse marquée en soirée. 
+          Cette diminution en prime-time indique que la répartition du temps d’expression reste liée à la structure des programmes et aux types d’émissions diffusées à ces heures.
+        </p>
+        <div style="min-height:397px" id="datawrapper-vis-zxlvs">
+          <script type="text/javascript" defer 
+            src="https://datawrapper.dwcdn.net/zxlvs/embed.js" 
+            charset="utf-8" 
+            data-target="#datawrapper-vis-zxlvs">
+          </script>
+          <noscript>
+            <img src="https://datawrapper.dwcdn.net/zxlvs/full.png" alt="Area Chart" />
+          </noscript>
         </div>
       </div>
     </section>
-    <section class="card info-card">
-      <div class="card-header">
-        <h3>Le piège de la moyenne</h3>
-      </div>
-      <p>Une parité globale de 29,40% peut masquer des inégalités importantes. Les femmes sont surreprésentées aux heures creuses et sous-représentées aux heures de grande écoute.</p>
 
-      <div class="stats-row">
-        <div class="stat-box">
-          <h4>Prime-time (18h-23h)</h4>
-          <p class="percentage">27.62%</p>
-          <p class="description">Taux d'expression des femmes aux heures de grande écoute</p>
-        </div>
-        <div class="stat-box">
-          <h4>Heures creuses (0h-8h)</h4>
-          <p class="percentage">28.56%</p>
-          <p class="description">Taux d'expression des femmes la nuit</p>
-        </div>
-      </div>
-
-      <div class="info-line">
-        <span class="icon trend-icon">&#8663;</span>
-        <p><b>Écart de 0,94 points </b> entre les heures creuses et le prime-time. Les femmes sont davantage présentes quand l'audience est plus faible.</p>
-      </div>
-    </section>
-
-    <section class="summary-stats">
-      <div class="card stat-card">
-        <div class="card-header">
-         <span class="icon"><i class="fa-solid fa-hourglass"></i></span>
-          <h4>Temps total analysé</h4>
-        </div>
-        <p class="main-stat">460 481 h</p>
-        <p class="sub-stat">Volume total de contenu étudié</p>
-      </div>
-
-      <div class="card stat-card">
-        <div class="card-header">
-          <span class="icon"><i class="fa-solid fa-female"></i></span>
-          <h4>Temps de parole femmes</h4>
-        </div>
-        <p class="main-stat female-color">88 983 h</p>
-        <p class="sub-stat">29,40% du temps total</p>
-      </div>
-
-      <div class="card stat-card">
-        <div class="card-header">
-          <span class="icon"><i class="fa-solid fa-male"></i></span>
-          <h4>Temps de parole hommes</h4>
-        </div>
-        <p class="main-stat male-color">213 731 h</p>
-        <p class="sub-stat">70,60% du temps total</p>
-      </div>
-    </section>
-  </div>
-</section>
-
-<section> <div class="chart-container"> 
-  <h2>Une présence féminine en retrait aux heures de grande écoute</h2>
-   <p class="chart-comment">
-  L’analyse horaire révèle une répartition inégale du temps de parole selon les tranches d’antenne. 
-  La part des femmes reste globalement inférieure à 30 % tout au long de la journée, 
-  avec un léger pic autour de la mi-journée. 
-  En revanche, leur visibilité diminue sensiblement en soirée, 
-  période de plus forte audience, où les hommes occupent plus de 70 % du temps de parole. 
-  Ce déséquilibre souligne que la parité reste encore marginale dans les espaces médiatiques les plus exposés.
-</p>
-  <div style="min-height:397px" id="datawrapper-vis-zxlvs">
-    <script type="text/javascript" defer 
-      src="https://datawrapper.dwcdn.net/zxlvs/embed.js" 
-      charset="utf-8" 
-      data-target="#datawrapper-vis-zxlvs">
-    </script>
-    <noscript>
-      <img src="https://datawrapper.dwcdn.net/zxlvs/full.png" alt="Area Chart" />
-    </noscript>
-  </div>
-  </div> 
- </section>
- <section id="apropos" class="section">
+    <section id="apropos" class="section">
       <h2>À propos du projet</h2>
-      <p>Ce projet vise à rendre visible la place des femmes dans les médias audiovisuels français. Les données proviennent notamment du Conseil Supérieur de l’Audiovisuel (CSA) et d’autres bases publiques. L’objectif est de transformer ces données en visualisations interactives, compréhensibles et pédagogiques.</p>
+      <p>
+        Ce projet a pour objectif de rendre plus lisible la place des femmes dans les médias audiovisuels français, 
+        à travers des données issues du CSA et d’autres sources publiques. 
+        En transformant ces chiffres en visualisations claires et interactives, 
+        il devient possible d’observer les évolutions de manière concrète et d’analyser les tendances de représentation sur plusieurs décennies.
+      </p>
     </section>
   </main>
 
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
 
   <footer>
     <p>© 2025 Femmes & Médias | Projet académique de visualisation de données</p>
